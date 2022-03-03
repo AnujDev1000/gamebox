@@ -1,0 +1,813 @@
+body
+{
+	padding: 0;
+	margin: 0;
+	font-family: arial;
+	background: url(assets/img1.jpg);
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+.header
+{
+	position: fixed;
+	width: 90%;
+	height: 100px;
+	top: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	background: rgba(0,0,0,.8);
+	color: white;
+	border-radius: 10px;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-content: center;
+	z-index: 1;
+}
+.header .logo
+{
+	position: relative;
+	width: auto;
+	height: 100px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.header .logo span
+{
+	position: relative;
+	padding: 0 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: verdana;
+}
+.header .logo span mark
+{
+	position: relative;
+	background: transparent;
+	color: red;
+}
+.header .menu
+{
+	position: relative;
+	width: auto;
+	height: 100px;
+	padding: 0 30px;
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+	justify-content: center;
+	align-content: center;
+}
+.header .menu span
+{
+	position: relative;
+	font-size: 1.5rem;
+	cursor: pointer;
+}
+.header .menu span:hover
+{
+	transition: .5s;
+	color: red;
+}
+.home
+{
+	position: relative;
+	width: 100%;
+	height: 4000px;
+	background: transparent;
+	display: block;
+	overflow: hidden;
+}
+.home .images
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: url(assets/img2.jpg);
+	background-color: black;
+	background-size: 100% 100%;
+	color: white;
+	border-bottom: 4px solid red;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.home .images .content1
+{
+	position: relative;
+	width: 900px;
+	height: 500px;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	justify-content: center;
+	align-content: flex-end;
+}
+.home .images .content1 .heading
+{
+	position: relative;
+	width: 900px;
+	height: 100px;
+	font-size: 5rem;
+	font-weight: bold;
+	font-family: arial;
+	text-transform: uppercase;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.home .images .content1 p
+{
+	position: relative;
+	width: 900px;
+	height: 100px;
+	font-size: 1.2rem;
+	text-align: center;
+}
+.home .images .content1 .readmore
+{
+	position: relative;
+	width: 900px;
+	height: 150px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.home .images .content1 .readmore button
+{
+	position: relative;
+	width: 200px;
+	height: 50px;
+	background: white;
+	font-size: 1.3rem;
+	border: none;
+	box-shadow: 8px 8px 2px red;
+}
+
+.home .cardgroup
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: transparent;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 50px;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.home .cardgroup .card
+{
+	position: relative;
+	width: 250px;
+	height: 400px;
+	font-size: 1.1rem; 
+	color: white;
+	display: grid;
+	align-content: flex-start;
+	grid-gap: 10px;
+}
+.home .cardgroup .card span
+{
+	position: relative;
+	font-size: 1.3rem;
+	font-style: italic;
+}
+.home .cardgroup .card span mark
+{
+	position: relative;
+	background: transparent;
+	color: #ff1a1a;
+	font-weight: bold;
+}
+.home .cardgroup .card h2
+{
+	position: relative;
+	margin: 0;
+	font-size: 2rem;
+}
+.home .cardgroup .card button
+{
+	position: relative;
+	width: 150px;
+	height: 40px;
+	background: red;
+	color: white;
+	font-size: 1.2rem;
+	border: none;
+}
+.home .intro
+{
+	position: relative;
+	width: 100%;
+	height: 2200px;
+	background: #800000;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 50px;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.home .intro .box1
+{
+	position: relative;
+	width: 400px;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-gap: 20px;
+	justify-content: center;
+	align-content: space-between;
+}
+.home .intro .box1 .latestnews
+{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	align-content: flex-start;
+}
+.home .intro .box1 .latestnews span
+{
+	position: relative;
+	width: 100%;
+	height: 30px;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	font-size: 2rem;
+	font-style: italic;
+	font-weight: bold;
+}
+.home .intro .box1 .latestnews button
+{
+	position: relative;
+	width: auto;
+	height: 50px;
+	background: red;
+	color: white;
+	font-size: 1.2rem;
+	border: none;
+}
+.home .intro .box1 .card
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	display: grid;
+	align-content: center;
+}
+.home .intro .box1 .card .imgbox
+{
+	position: relative;
+	width: 100%;
+	height: 350px;
+}
+.home .intro .box1 .card .imgbox img
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.home .intro .box1 .card span
+{
+	position: relative;
+	margin: 20px 0;
+	font-size: 1.3rem;
+	font-style: italic;
+}
+.home .intro .box1 .card span mark
+{
+	position: relative;
+	background: transparent;
+	color: #ff1a1a;
+	font-weight: bold;
+}
+.home .intro .box1 .card h2
+{
+	position: relative;
+	margin: 0;
+	font-size: 1.5rem;
+}
+.home .intro .box1 .card button
+{
+	position: relative;
+	width: 150px;
+	height: 40px;
+	background: white;
+	font-size: 1.2rem;
+	border: none;
+	box-shadow: 6px 6px 1px red;	
+}
+.home .intro .box2
+{
+	position: relative;
+	width: 400px;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-gap: 50px;
+	justify-content: center;
+	align-content: flex-start;
+}
+.home .intro .box2 .trending
+{
+	position: relative;
+	width: 100%;
+	height: 500px;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto;
+	grid-gap: 10px;
+	justify-content: center;
+	align-content: center;
+}
+.home .intro .box2 .trending .card
+{
+	position: relative;
+	width: 100%;
+	height: 100px;
+	color: white;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 10px;
+	justify-content: center;
+	align-content: center; 
+}
+.home .intro .box2 .trending .card .imgbox
+{
+	position: relative;
+	width: 150px;
+	height: 100px;
+}
+.home .intro .box2 .trending .card .imgbox img
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.home .intro .box2 .trending .card .info
+{
+	position: relative;
+	width: 240px;
+	height: 100px;
+}
+.home .intro .box2 .trending .card .info span
+{
+	position: relative;
+	margin: 20px 0;
+	font-size: 1.1rem;
+	font-style: italic;
+}
+.home .intro .box2 .trending .card .info span mark
+{
+	position: relative;
+	background: transparent;
+	color: #ff1a1a;
+	font-weight: bold;
+}
+.home .intro .box2 .trending .card .info h2
+{
+	position: relative;
+	margin: 0;
+	font-size: 1.4rem;
+}
+.home .intro .box2 .categories,.game .intro .box2 .categories,.game .intro .box2 .platforms,.game .intro .box2 .genre
+{
+	position: relative;
+	width: 300px;
+	height: 350px;
+	background: white;
+	color: black;
+	font-size: 1.1rem;
+	display: grid;
+	grid-template-rows: auto auto;
+	align-content: center;
+}
+.home .intro .box2 .categories .heading,.game .intro .box2 .categories .heading,.game .intro .box2 .platforms .heading,.game .intro .box2 .genre .heading
+{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	padding: 0 50px;
+	font-size: 1.5rem;
+	font-family: verdana;
+	font-weight: bold;
+	font-style: italic;
+	display: grid;
+	align-content: center;
+}
+.home .intro .box2 .categories .list,.game .intro .box2 .categories .list,.game .intro .box2 .platforms .list,.game .intro .box2 .genre .list
+{
+	position: relative;
+	width: 100%;
+	height: 280px;
+	padding: 0 40px;
+	font-size: 1.2rem;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto auto;
+	grid-gap: 20px;
+	align-content: center; 
+}
+.home .intro .box2 .consoleimg
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	background: url(https://i.pinimg.com/564x/20/34/e3/2034e35ae605c6fcb96090bcef3b52b4.jpg);
+	background-size: 100% 100%;
+	color: white;
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-content: center;
+	align-content: space-between;
+}
+.home .intro .box2 .consoleimg .heading
+{
+	position: relative;
+	width: 100%;
+	height: 150px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.home .intro .box2 .consoleimg .heading span
+{
+	position: relative;
+	font-size: 1.8rem;
+	font-weight: bold;
+}
+.home .intro .box2 .consoleimg .heading i
+{
+	position: relative;
+	font-size: 3rem;
+	font-weight: bold;
+	font-family: ;
+	padding: 0 30px;
+	color: #3399ff;
+}
+.home .intro .box2 .consoleimg .get
+{
+	position: relative;
+	width: 300px;
+	height: 70px;
+	background: rgba(0,0,0,.5);
+	font-size: 1.4rem;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.home .newgame,.game .newgame
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: transparent;
+	color: white;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.home .newgame .content2,.game .newgame .content2
+{
+	position: relative;
+	width: 800px;
+	height: 500px;
+	font-size: 1.4rem;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.home .newgame .content2 span,.game .newgame .content2 span
+{
+	position: relative;
+	margin: 20px 0;
+	font-size: 1.5rem;
+	font-style: italic;
+}
+.home .newgame .content2 span mark,.game .newgame .content2 span mark
+{
+	position: relative;
+	background: transparent;
+	color: #ff1a1a;
+	font-weight: bold;
+}
+.home .newgame .content2 h2,.game .newgame .content2 h2
+{
+	position: relative;
+	margin: 0;
+	font-size: 3rem;
+}
+.home .newgame .content2 button,.game .newgame .content2 button
+{
+	position: relative;
+	width: 200px;
+	height: 50px;
+	background: red;
+	color: white;
+	font-size: 1.3rem;
+	border: none;	
+}
+.game 
+{
+	position: relative;
+	width: 100%;
+	height: 3300px;
+	display: none;
+	overflow: hidden;
+}
+.game .content1,.reviews .content1
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: url(https://4.bp.blogspot.com/-iY6x4Vl6QGg/XQ0dWZplFPI/AAAAAAAAHlo/kBJCNsK-K3AyrNviyuDhKbNZDtlns2kewCKgBGAs/w2560-h1440-c/control-uhdpaper.com-4K-13.jpg);
+	background-size: 100% 100%;
+	font-size: 2.5rem;
+	color: white;
+	border-bottom: 4px solid red;
+	display: grid;
+	grid-template-rows: auto auto;
+	justify-content: flex-start;
+	align-content: center;
+}
+.game .content1 span,.reviews .content1 span
+{
+	position: relative;
+	margin-top: 120px;
+	margin-left: 80px;
+}
+.game .content1 i,.reviews .content1 i
+{
+	position: relative;
+	font-size: 1.3rem;
+	margin-left: 80px;
+	word-spacing: 10px;
+}
+.game .content1 i mark,.reviews .content1 i mark
+{
+	position: relative;
+	background: transparent;
+	color: #ff1a1a;
+	font-weight: bold;
+}
+.game .intro
+{
+	position: relative;
+	width: 100%;
+	height: 2400px;
+	background: #800000;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.game .intro .box1
+{
+	position: relative;
+	width: 600px;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 10px;
+	grid-row-gap: 50px;
+	justify-content: center;
+	align-content: flex-start;
+}
+.game .intro .box1 .card
+{
+	position: relative;
+	width: 300px;
+	height: 400px;
+	display: grid;
+	align-content: flex-start;
+}
+.game .intro .box1 .card .imgbox
+{
+	position: relative;
+	width: 100%;
+	height: 300px;
+}
+.game .intro .box1 .card .imgbox img
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.game .intro .box1 .card span
+{
+	position: relative;
+	height: 50px;
+	font-size: 1.4rem;
+	display: grid;
+	align-content: center;
+}
+.game .intro .box1 .card button
+{
+	position: relative;
+	width: 150px;
+	height: 40px;
+	background: red;
+	color: white;
+	font-size: 1.3rem;
+	border: none;	
+}
+.game .intro .box2
+{
+	position: relative;
+	width: 300px;
+	height: auto;
+	color: white;
+	display: grid;
+	grid-gap: 100px;
+	justify-content: center;
+	align-content: flex-start;
+}
+.reviews
+{
+	position: relative;
+	width: 100%;
+	height: 4500px;
+	display: none;
+	overflow: hidden;
+}
+.reviews .intro
+{
+	position: relative;
+	width: 100%;
+	height: 4200px;
+	background: #800000;
+	display: grid;
+	grid-gap: 80px;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.reviews .intro .card
+{
+	position: relative;
+	width: 800px;
+	height: auto;
+	color: white;
+	font-size: 1.3rem;
+	display: grid;
+	grid-template-rows: auto auto auto;
+	justify-content: center;
+	align-content: center;
+}
+.reviews .intro .card .imgbox
+{
+	position: relative;
+	width: 700px;
+	height: 600px;
+}
+.reviews .intro .card .imgbox img
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.reviews .intro .card .info
+{
+	position: relative;
+	width: 100%;
+	height: 100px; 
+	color: white;
+	display: grid;
+	grid-template-columns: auto auto;
+	justify-content: space-between;
+	align-content: center;
+}
+.reviews .intro .card .info span
+{
+	font-size: 1.7rem;
+	font-weight: bold;
+	padding: 0 10px;
+}
+.reviews .intro .card .info h2
+{
+	position: relative;
+	margin: 0 20px;
+}
+.reviews .intro .card .info h2 span
+{
+	position: relative;
+	font-size: 1.4rem;
+	padding: 0 10px;
+	color: grey;
+}
+.reviews .intro .card .info h2 mark
+{
+	position: relative;
+	background: transparent;
+	font-size: 1.7rem;
+	color: red;
+}
+.footer 
+{
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background: #4d0000;
+	color: white;
+	display: grid;
+	grid-template-rows: auto auto auto auto auto ;
+	justify-content: center;
+	align-content: center;
+	overflow: hidden;
+}
+.footer .heading 
+{
+	position: relative;
+	width: 500px;
+	height: 200px;
+	font-size: 3rem;
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.footer .email
+{
+	position: relative;
+	width: 500px;
+	height: 50px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.footer .email input
+{
+	position: relative;
+	width: 600px;
+	height: 40px;
+	padding: 0 20px;
+	background: transparent;
+	color: white;
+	border: none;
+	border-bottom: 2px solid white;
+	font-size: 1.2rem;
+}
+.footer .subscribe
+{
+	width: 500px;
+	height: 70px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.footer .subscribe button
+{
+	position: relative;
+	width: 200px;
+	height: 50px;
+	background: white;
+	font-size: 1.3rem;
+	border: none;
+	box-shadow: 8px 8px 1px red;	
+}
+.footer .logo
+{
+	position: relative;
+	width: 500px;
+	height: 150px;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+}
+.footer .logo span
+{
+	position: relative;
+	padding: 0 20px;
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: verdana;
+}
+.footer .logo span mark
+{
+	position: relative;
+	background: transparent;
+	color: red;
+}
+.footer .follow
+{
+	position: relative;
+	width: 500px;
+	height: 70px;
+	font-size: 2rem;
+	color: white;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	justify-content: center;
+	align-content: center;
+}
